@@ -4,7 +4,7 @@
 
 
 
-# An Ultimate Tutorial for DJI Robomaster S1 Beginners
+# Полное руководство для новых пользователей DJI Robomaster S1
 
 
 ![MY Image](https://github.com/collabnix/robomaster/blob/main/robomaster_top.png)
