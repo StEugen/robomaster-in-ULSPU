@@ -23,7 +23,7 @@ Robomaster S1 - это обучающмий робот, который позв�
 8. [Hacking into Robomaster S1](#hacking-into-robomaster)
 9. [References](#references)
 
-## Top 10 Features
+## Топ 10 особенностей
 
 
 - Support for Python and Scratch programming language
