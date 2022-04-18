@@ -40,10 +40,10 @@ Robomaster S1 - это обучающмий робот, который позв�
 
 
 
-## Stimulus that S1 recognises
+## Stimulus that S1 recognises Действия, которые распознает S1
 
-- Clapping Recognition: the S1 can recognize two or three consecutive claps and be programmed to execute custom responses.
-- Gesture Recognition: the S1 can detect human gestures such as hand or arm signals and be programmed to execute custom responses.
+- Распознование хлопков: S1 может распознать два или три последовательных хлопка, а также может программироваться на выполнение пользовательской реакции
+- Gesture Recognition: the S1 can detect human gestures such as hand or arm signals and be programmed to execute custom responses. 
 - S1 Robot Recognition: the S1 can detect other RoboMaster S1 units.
 - Vision Marker Recognition: the S1 can identify 44 kinds of official Vision Markers, which are comprised primarily of numbers, letters, and special characters. All of the files for these Vision Markers can be downloaded at insert web address.
 - Line Recognition: the S1 can detect and follow blue, red, and green tracks with a width of approximately 15-25 mm.
