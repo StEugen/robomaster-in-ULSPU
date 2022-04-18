@@ -14,29 +14,29 @@ Robomaster S1 - это обучающмий робот, который позв�
 ## Содержание
 
 1. [Топ 10 особенностей](#Топ-10-особенностей)
-2. [Stimulus that S1 Recognises](#Stimulus-that-S1-recognises)
-3. [Getting Started](#getting-started)
-4. [Items Check and Assembly](#items-check-and-assembly)
-5. [Asembly the Mecanum Wheels](#assembly-the-mecanum-wheels)
-6. [Attaching the Gimbal to the Chassis](#attaching-the-gimbal-to-the-chassis)
-7. [Mounting the Gel Bead Container and Intelligent Battery](#mounting-the-gel-bead-container-and-intelligent-battery)
-8. [Hacking into Robomaster S1](#hacking-into-robomaster)
-9. [References](#references)
+2. [Действия, которые распознает S1](#Stimulus-that-S1-recognises)
+3. [Начало работы](#getting-started)
+4. [Проверка и сборка деталей](#items-check-and-assembly)
+5. [Сборка колес илона](#assembly-the-mecanum-wheels)
+6. [крепление карданного подвеса к шасси](#attaching-the-gimbal-to-the-chassis)
+7. [Прикрепление контейнера для гелевых шариков и умной батареи](#mounting-the-gel-bead-container-and-intelligent-battery)
+8. [Взлом Robomaster S1](#hacking-into-robomaster)
+9. [Ссылки](#references)
 
 ## Топ 10 особенностей
 
 
-- Support for Python and Scratch programming language
-- 46 Programmable Components - all in DIY mode
-- 6 Programmable AI Module
-- Low-latency HD FPV
-- Scratch & Python Coding
-- 4WD Omnidirectional Movement
-- Intelligent Sensing Armor
-- Multiple Exciting Battle Modes
-- Innovative Hands-On Learning
-- Two shooting methods: gel beads and infrared beams.
-- Capability to capture photos and record 1080p videos; without a microSD card, it supports only 720p.
+- Поддержка языка программирования Python и блочного программирования Scratch
+- 46 Programmable Components - all in DIY mode 46 программируемых компонентов - все в DIY ("сделай сам") режиме 
+- 6 прораммируемых модулей исскуственного интеллекта 
+- HD FPV (вид от первого лица) с низкой задержкой
+- Scratch & Python Coding Проограммирование на Scratch и Python
+- Полновприводное всенаправленное движение
+- Интелектуальная броня, оснащенная датчиками ударов
+- Множество захватывающих режимов игры
+- Иновационное практическое обучение
+- Два режима стрельбы: гелевые шарики и инфракрасные лучи
+- Возможность захвата фотографий и записи видео с разрешением 1080p; без карты microSD он поддерживает только разрешение 720p.
 
 
 
