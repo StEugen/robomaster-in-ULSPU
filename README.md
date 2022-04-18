@@ -171,7 +171,7 @@ pip install robomaster
 ![image](https://user-images.githubusercontent.com/34368930/117563481-d692fa80-b0c3-11eb-8e34-5fd1a05f713e.png)
 
 
-## Настройка робота и прошивки Robomaster
+## Настройка робота и прошивки Robomaster внешними средствами
 
 
 
