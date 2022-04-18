@@ -176,20 +176,19 @@ pip install robomaster
 
 
 
-### What you need
+### Что вам понадобиться
 
 - Android SDK Platform‐Tools (https://developer.android.com/studio/releases/platform‐tools)
-- Micro USB Cable
-- Latest Robomaster S1 App & Firmware
-- Windows 10 (might or mightn't work for MacOS)
+- Кабель micro USB
+- Последняя версия приложения и прошивки Robomaster S1
+- Windows 10 (может сработать, а может и не сработать с MacOS)
 
 
-### Step by step instructions
+### Пошаговая инструкция
 
-- Unzip the Android SDK Platform‐Tools somewhere in your system
-- Use the Intelligent Controller Micro USB Port and connect the S1 to your computer.
-- Start the Robomaster S1 application. Go to the Lab, create a new Python application and
-paste the following code:
+- Распакуйте архив Android SDK Platform-Tools где-либо в вашей системе
+- Используйте Micro USB порт интеллектуального контроллера и подсоедините S1 к вашему компьютеру.
+- Запустите приложение Robomaster. Направтесь в лабораторию, создайте новое приложение на Python и скопируйте следующий код:
 
 ```
 def root_me(module):
