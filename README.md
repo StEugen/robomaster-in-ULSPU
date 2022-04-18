@@ -56,18 +56,18 @@ Robomaster S1 - это обучающмий робот, который позв�
 - Плоские поверхности, такие как дерево, ковер, плитка и бетон, являются оптимальными для работы с S1. Пользователям следует избегать слишком гладких поверхностей, так как у колес S1 могут возникнуть проблемы с получением достаточного сцепления для точного управления. Следует избегать поверхностей с мелкими частицами, такими как песок или грязь.
 
 
-## Table of Contents
+## Содержание
 
-1. [Getting Started](#getting-started)
-2. [Items Check and Assembly](#items-check-and-assembly)
-3. [Asembly the Mecanum Wheels](#assembly-the-mecanum-wheels)
-4. [Attaching the Gimbal to the Chassis](#attaching-the-gimbal-to-the-chassis)
-5. [Mounting the Gel Bead Container and Intelligent Battery](#mounting-the-gel-bead-container-and-intelligent-battery)
-6. [Hacking into Robomaster S1](#hacking-into-robomaster)
+1. [Начало работы](#getting-started)
+2. [Проверка и сборка деталей](#items-check-and-assembly)
+3. [Сборка колес илона](#assembly-the-mecanum-wheels)
+4. [крепление карданного подвеса к шасси](#attaching-the-gimbal-to-the-chassis)
+5. [Прикрепление контейнера для гелевых шариков и умной батареи](#mounting-the-gel-bead-container-and-intelligent-battery)
+6. [Взлом Robomaster S1](#hacking-into-robomaster)
 
-# Getting Started
+# Начало работы
 
-- Installing Robomaster Python Module on MacOS
+- Установка модуля Robomaster Python для MacOS
 
 ```
 conda create --name dji python=3.7
