@@ -49,11 +49,11 @@ Robomaster S1 - это обучающмий робот, который позв�
 - Распознавание линий: S1 может обнаруживать и отслеживать синие, красные и зеленые дорожки шириной примерно 15-25 мм.
 
 
-## How it works?
+## Как это работает?
 
-- The RoboMaster S1 can be operated using a computer or a smart device via the touchscreen and gamepad. When using the gamepad with a touchscreen device, the robot can also be operated using an external mouse, which can be connected through a dedicated USB port
-- Users can connect to the RoboMaster S1 via Wi-Fi or a router. When connecting via Wi-Fi, your mobile device or computer connects to the Wi-Fi of the S1. Connection via router provides broader signal coverage, which allows multiple control methods for robots to operate simultaneously on the same network.
-- Flat surfaces such as wood, carpet, tile, and concrete are optimal for operating the S1. Users should avoid surfaces that are too smooth as the S1 wheels may have problems gaining enough traction for precise control. Surfaces with fine particles like sand or dirt should be avoided.
+- Robomaster S1 может управляться через компьютер или смартфон, через дисплей (touchscreen) и геймпад. Во время использования геймпада с девайсом с тачскрином, роботом можно управлять с помощью внешней мыши, которая подсоединяется через специальной USB порт.
+- Пользователи могут подключаться к Robomasters S1 через Wi-Fi или роутер. Во время подключения через Wi-Fi, ваше мобильное устройство или компьютер присоединяется к Wi-Fi S1 (режим работы - "hot spot"). Подключение через роутер обеспечивает более широкий охват сигнала, что позволяет роботам одновременно работать в одной сети.
+- Плоские поверхности, такие как дерево, ковер, плитка и бетон, являются оптимальными для работы с S1. Пользователям следует избегать слишком гладких поверхностей, так как у колес S1 могут возникнуть проблемы с получением достаточного сцепления для точного управления. Следует избегать поверхностей с мелкими частицами, такими как песок или грязь.
 
 
 ## Table of Contents
