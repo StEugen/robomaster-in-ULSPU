@@ -18,7 +18,7 @@ Robomaster S1 - это обучающмий робот, который позв�
 3. [Начало работы](#getting-started)
 4. [Проверка и сборка деталей](#items-check-and-assembly)
 5. [Сборка колес илона](#assembly-the-mecanum-wheels)
-6. [крепление карданного подвеса к шасси](#attaching-the-gimbal-to-the-chassis)
+6. [крепление подвеса к шасси](#attaching-the-gimbal-to-the-chassis)
 7. [Прикрепление контейнера для гелевых шариков и умной батареи](#mounting-the-gel-bead-container-and-intelligent-battery)
 8. [Взлом Robomaster S1](#hacking-into-robomaster)
 9. [Ссылки](#references)
@@ -61,7 +61,7 @@ Robomaster S1 - это обучающмий робот, который позв�
 1. [Начало работы](#getting-started)
 2. [Проверка и сборка деталей](#items-check-and-assembly)
 3. [Сборка колес илона](#assembly-the-mecanum-wheels)
-4. [крепление карданного подвеса к шасси](#attaching-the-gimbal-to-the-chassis)
+4. [крепление подвеса к шасси](#attaching-the-gimbal-to-the-chassis)
 5. [Прикрепление контейнера для гелевых шариков и умной батареи](#mounting-the-gel-bead-container-and-intelligent-battery)
 6. [Взлом Robomaster S1](#hacking-into-robomaster)
 
@@ -84,7 +84,7 @@ pip install robomaster
 
 
 
-# Steps to assemble Robomaster
+# Шаги для сборки Robomaster
 
 ![robo](/images/robo1.jpg)
 
@@ -106,12 +106,12 @@ pip install robomaster
 
 
 
-# Items Check and Assembly
+# Проверка и сборка деталей
 
 ![image](https://user-images.githubusercontent.com/34368930/117563215-f45f6000-b0c1-11eb-9804-4aebff9d5321.png)
 
 
-# Assembly the Mecanum Wheels
+# Сборка колес илона
 
 ![image](https://user-images.githubusercontent.com/34368930/117563270-50c27f80-b0c2-11eb-8fe0-47978a6c16de.png)
 
@@ -122,7 +122,7 @@ pip install robomaster
 
 
 
-# Attaching the Gimbal to the chassis
+# крепление подвеса к шасси
 
 ![image](https://user-images.githubusercontent.com/34368930/117563309-97b07500-b0c2-11eb-98b8-68b39d1537c0.png)
 
@@ -148,7 +148,7 @@ pip install robomaster
 ![image](https://user-images.githubusercontent.com/34368930/117563385-1d342500-b0c3-11eb-99f4-f2a7a47fd087.png)
 
 
-# Mounting the Gel Bead Container and Intelligent Battery
+# Прикрепление контейнера для гелевых шариков и умной батареи
 
 ![image](https://user-images.githubusercontent.com/34368930/117563399-2d4c0480-b0c3-11eb-8ba4-11bcd1c20fbc.png)
 
@@ -166,12 +166,12 @@ pip install robomaster
 
 ![image](https://user-images.githubusercontent.com/34368930/117563428-697f6500-b0c3-11eb-8ddd-61424cffd8e3.png)
 
-## Get Ready!
+## Готово!
 
 ![image](https://user-images.githubusercontent.com/34368930/117563481-d692fa80-b0c3-11eb-8e34-5fd1a05f713e.png)
 
 
-## Hacking into Robomaster
+## Взлом Robomaster
 
 
 
