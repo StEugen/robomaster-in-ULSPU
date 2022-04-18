@@ -9,11 +9,11 @@
 
 ![MY Image](https://github.com/collabnix/robomaster/blob/main/robomaster_top.png)
 
-The RoboMaster S1 is an educational robot that provides users with an in-depth understanding of science, math, physics, programming, and more through captivating gameplay modes and intelligent features.
+Robomaster S1 - это обучающмий робот, который позволяет пользователю глубоко понять науку, математику, физику, програмирование и больше через захватывающие игровые режимы и интелектуальные функции.
 
-## Table of Contents
+## Содержание
 
-1. [Top 10 Features](#top-10-features)
+1. [Top 10 Features](#Топ 10 особенностей)
 2. [Stimulus that S1 Recognises](#Stimulus-that-S1-recognises)
 3. [Getting Started](#getting-started)
 4. [Items Check and Assembly](#items-check-and-assembly)
