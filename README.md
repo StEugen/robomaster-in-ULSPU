@@ -20,7 +20,7 @@ Robomaster S1 - это обучающмий робот, который позв�
 5. [Сборка колес илона](#assembly-the-mecanum-wheels)
 6. [крепление подвеса к шасси](#attaching-the-gimbal-to-the-chassis)
 7. [Прикрепление контейнера для гелевых шариков и умной батареи](#mounting-the-gel-bead-container-and-intelligent-battery)
-8. [Взлом Robomaster S1](#hacking-into-robomaster)
+8. [Настройка робота и прошивки Robomaster](#hacking-into-robomaster)
 9. [Ссылки](#references)
 
 ## Топ 10 особенностей
@@ -63,7 +63,7 @@ Robomaster S1 - это обучающмий робот, который позв�
 3. [Сборка колес илона](#assembly-the-mecanum-wheels)
 4. [крепление подвеса к шасси](#attaching-the-gimbal-to-the-chassis)
 5. [Прикрепление контейнера для гелевых шариков и умной батареи](#mounting-the-gel-bead-container-and-intelligent-battery)
-6. [Взлом Robomaster S1](#hacking-into-robomaster)
+6. [Настройка робота и прошивки Robomaster](#hacking-into-robomaster)
 
 # Начало работы
 
@@ -148,7 +148,7 @@ pip install robomaster
 ![image](https://user-images.githubusercontent.com/34368930/117563385-1d342500-b0c3-11eb-99f4-f2a7a47fd087.png)
 
 
-# Прикрепление контейнера для гелевых шариков и умной батареи
+# Крепление контейнера для гелевых шариков и умной батареи
 
 ![image](https://user-images.githubusercontent.com/34368930/117563399-2d4c0480-b0c3-11eb-8ba4-11bcd1c20fbc.png)
 
@@ -171,7 +171,7 @@ pip install robomaster
 ![image](https://user-images.githubusercontent.com/34368930/117563481-d692fa80-b0c3-11eb-8e34-5fd1a05f713e.png)
 
 
-## Взлом Robomaster
+## Настройка робота и прошивки Robomaster
 
 
 
@@ -200,27 +200,23 @@ proc=subprocess.Popen('/system/bin/adb_en.sh',shell=True,executable='
 /system/bin/sh',stdout=subprocess.PIPE,stderr=subprocess.PIPE)
 ```
 
-- Run the Code within the S1 Lab. If you followed the steps correctly there should be no
-compilation errors. The Console will show: Execution Complete
+- Запустите код в лаборатории. Если вы правильно следовали шагам, то не должно быть ошибок в компиляции. Консоль покажет: Execution Complete.
 
-- Don’t close the S1 Application! Open an Explorer window and go to the directory which holds
-the earlier extracted Android Platform Tools. Open a PowerShell in this directory (Shift +
-Right‐Click)
+- Не закрывайте приложение Robomaster! откройте окно проводника и направляйтесь в директорию, в которую вы ранее распаковали Android Platform Tools. Откройте Powershell в этой директории (Shift + Right-Click).
 
-- Run the ADP command to list the devices: 
+- Запустите ADP команду, чтобы вывести список устройств:
 
 ```
 .\adb.exe devices
 ```
 
-You should see something like
-this:
+Вы должны увидеть что-то похожее на это:
 
 
 
 <img width="599" alt="Screen Shot 2021-07-21 at 2 04 14 PM" src="https://user-images.githubusercontent.com/34368930/126458132-9a1fdd51-3d2f-4695-88a1-896d3ca09652.png">
 
--  Execute: 
+-  Запустите: 
 
 ```
 .\adb.exe shell
@@ -228,7 +224,7 @@ this:
 
 <img width="689" alt="Screen Shot 2021-07-21 at 2 04 35 PM" src="https://user-images.githubusercontent.com/34368930/126458200-a5f8727a-1a2d-4953-852d-066b34237913.png">
 
-## DJI Specific Commands
+## Специальные команды DJI
 
 ```
 dji
@@ -240,7 +236,7 @@ dji_cpuburn         dji_mb_parser       dji_sys
 ```
 
 
-### Checking IP address
+### Проверяем IP адрес
 
 ```
  ip a
@@ -258,14 +254,14 @@ dji_cpuburn         dji_mb_parser       dji_sys
        valid_lft forever preferred_lft forever
  ```
  
- ### Checking the type of Hunter.py file
+ ## Проверяем тип hunter.py файла 
  
  ```
  ./hunter.py
  vision_ctrl.enable_detection(rm_define.vision_detection_marker)  
  ```
  
-### Checking Memory Stats
+### Проверяем статистику потребления памяти
 
 ```
 127|root@xw607_dz_ap0002_v4:/system/bin # cat /proc/meminfo
@@ -308,7 +304,7 @@ VmallocUsed:      153220 kB
 VmallocChunk:     432132 kB
 ```
 
-### Top Command
+### Команда top
 
 ```
 oot@xw607_dz_ap0002_v4:/system/bin # top
@@ -332,7 +328,7 @@ User 126 + Nice 0 + Sys 203 + Idle 1138 + IOW 2 + IRQ 0 + SIRQ 1 = 1470
   ```
 
 
-## References
+## Ссылки
 
-- [Robomaster S1 Videos](https://www.dji.com/robomaster-s1/video)
-- [Robomaster S1 Courses](https://www.dji.com/robomaster-s1/video-courses)
+- [Видео о Robomaster S1](https://www.dji.com/robomaster-s1/video)
+- [Курсы Robomaster S1](https://www.dji.com/robomaster-s1/video-courses)
