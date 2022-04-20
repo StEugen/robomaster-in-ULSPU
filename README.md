@@ -20,8 +20,7 @@ Robomaster S1 - это обучающмий робот, который позв�
 5. [Сборка колес илона](#assembly-the-mecanum-wheels)
 6. [крепление подвеса к шасси](#attaching-the-gimbal-to-the-chassis)
 7. [Прикрепление контейнера для гелевых шариков и умной батареи](#mounting-the-gel-bead-container-and-intelligent-battery)
-8. [Настройка робота и прошивки Robomaster внешними средствами](#hacking-into-robomaster)
-9. [Ссылки](#references)
+8. [Ссылки](#references)
 
 ## Топ 10 особенностей
 
@@ -63,7 +62,6 @@ Robomaster S1 - это обучающмий робот, который позв�
 3. [Сборка колес илона](#assembly-the-mecanum-wheels)
 4. [крепление подвеса к шасси](#attaching-the-gimbal-to-the-chassis)
 5. [Прикрепление контейнера для гелевых шариков и умной батареи](#mounting-the-gel-bead-container-and-intelligent-battery)
-6. [Настройка робота и прошивки Robomaster внешними средствами](#hacking-into-robomaster)
 
 # Начало работы
 
@@ -169,163 +167,6 @@ pip install robomaster
 ## Готово!
 
 ![image](https://user-images.githubusercontent.com/34368930/117563481-d692fa80-b0c3-11eb-8e34-5fd1a05f713e.png)
-
-
-## Настройка робота и прошивки Robomaster внешними средствами
-
-
-
-
-### Что вам понадобиться
-
-- Android SDK Platform‐Tools (https://developer.android.com/studio/releases/platform‐tools)
-- Кабель micro USB
-- Последняя версия приложения и прошивки Robomaster S1
-- Windows 10 (может сработать, а может и не сработать с MacOS)
-
-
-### Пошаговая инструкция
-
-- Распакуйте архив Android SDK Platform-Tools где-либо в вашей системе
-- Используйте Micro USB порт интеллектуального контроллера и подсоедините S1 к вашему компьютеру.
-- Запустите приложение Robomaster. Направтесь в лабораторию, создайте новое приложение на Python и скопируйте следующий код:
-
-```
-def root_me(module):
- __import__=rm_log.__dict__['__builtins__']['__import__']
- return __import__(module,globals(),locals(),[],0)
-builtins=root_me('builtins')
-subprocess=root_me('subprocess')
-proc=subprocess.Popen('/system/bin/adb_en.sh',shell=True,executable='
-/system/bin/sh',stdout=subprocess.PIPE,stderr=subprocess.PIPE)
-```
-
-- Запустите код в лаборатории. Если вы правильно следовали шагам, то не должно быть ошибок в компиляции. Консоль покажет: Execution Complete.
-
-- Не закрывайте приложение Robomaster! откройте окно проводника и направляйтесь в директорию, в которую вы ранее распаковали Android Platform Tools. Откройте Powershell в этой директории (Shift + Right-Click).
-
-- Запустите ADP команду, чтобы вывести список устройств:
-
-```
-.\adb.exe devices
-```
-
-Вы должны увидеть что-то похожее на это:
-
-
-
-<img width="599" alt="Screen Shot 2021-07-21 at 2 04 14 PM" src="https://user-images.githubusercontent.com/34368930/126458132-9a1fdd51-3d2f-4695-88a1-896d3ca09652.png">
-
--  Запустите: 
-
-```
-.\adb.exe shell
-```
-
-<img width="689" alt="Screen Shot 2021-07-21 at 2 04 35 PM" src="https://user-images.githubusercontent.com/34368930/126458200-a5f8727a-1a2d-4953-852d-066b34237913.png">
-
-## Специальные команды DJI
-
-```
-dji
-dji_amt_board       dji_derivekey       dji_monitor         dji_verify
-dji_blackbox        dji_hdvt_uav        dji_net.sh          dji_vision
-dji_camera          dji_log_control.sh  dji_network
-dji_chkotp          dji_mb_ctrl         dji_sw_uav
-dji_cpuburn         dji_mb_parser       dji_sys
-```
-
-
-### Проверяем IP адрес
-
-```
- ip a
-1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN
-    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
-    inet 127.0.0.1/8 scope host lo
-       valid_lft forever preferred_lft forever
-8: rndis0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP qlen 1000
-    link/ether 0a:f8:f6:bb:55:64 brd ff:ff:ff:ff:ff:ff
-    inet 192.168.42.2/24 brd 192.168.42.255 scope global rndis0
-       valid_lft forever preferred_lft forever
-9: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP qlen 1000
-    link/ether 60:60:1f:cd:95:f7 brd ff:ff:ff:ff:ff:ff
-    inet 192.168.2.1/24 brd 192.168.2.255 scope global wlan0
-       valid_lft forever preferred_lft forever
- ```
- 
- ## Проверяем тип hunter.py файла 
- 
- ```
- ./hunter.py
- vision_ctrl.enable_detection(rm_define.vision_detection_marker)  
- ```
- 
-### Проверяем статистику потребления памяти
-
-```
-127|root@xw607_dz_ap0002_v4:/system/bin # cat /proc/meminfo
-MemTotal:         271708 kB
-MemFree:           59076 kB
-Buffers:           18700 kB
-Cached:            94776 kB
-SwapCached:            0 kB
-Active:           117648 kB
-Inactive:          58020 kB
-Active(anon):      62724 kB
-Inactive(anon):      136 kB
-Active(file):      54924 kB
-Inactive(file):    57884 kB
-Unevictable:         500 kB
-Mlocked:               0 kB
-HighTotal:             0 kB
-HighFree:              0 kB
-LowTotal:         271708 kB
-LowFree:           59076 kB
-SwapTotal:             0 kB
-SwapFree:              0 kB
-Dirty:                36 kB
-Writeback:             0 kB
-AnonPages:         62696 kB
-Mapped:            12308 kB
-Shmem:               176 kB
-Slab:              12712 kB
-SReclaimable:       6248 kB
-SUnreclaim:         6464 kB
-KernelStack:        2152 kB
-PageTables:         1300 kB
-NFS_Unstable:          0 kB
-Bounce:                0 kB
-WritebackTmp:          0 kB
-CommitLimit:      135852 kB
-Committed_AS:     341612 kB
-VmallocTotal:     745472 kB
-VmallocUsed:      153220 kB
-VmallocChunk:     432132 kB
-```
-
-### Команда top
-
-```
-oot@xw607_dz_ap0002_v4:/system/bin # top
-
-
-
-User 8%, System 13%, IOW 0%, IRQ 0%
-User 126 + Nice 0 + Sys 203 + Idle 1138 + IOW 2 + IRQ 0 + SIRQ 1 = 1470
-
-  PID PR CPU% S  #THR     VSS     RSS PCY UID      Name
-14020  1   3% S    28 146468K   8588K  fg root     /system/bin/dji_camera
-  247  3   3% S    24 213128K  14876K  fg root     /system/bin/dji_vision
-  483  1   2% S     8 112412K  11072K unk root     /data/python_files/bin/python
-  233  1   2% S    22  44460K   5232K  fg root     /system/bin/dji_hdvt_uav
-  239  0   1% S    15  31368K   4464K  fg root     /system/bin/dji_sw_uav
-  237  0   0% S    13  24208K   4092K  fg root     /system/bin/dji_network
-   41  0   0% S     1      0K      0K  fg root     kworker/0:1
-  245  1   0% S     6  31904K  20492K  fg root     /system/bin/dji_blackbox
-   69  1   0% S     1      0K      0K  fg root     mmcqd/0
-  243  1   0% S    27  50832K   9300K  fg root     /system/bin/dji_sys
-  ```
 
 
 ## Ссылки
